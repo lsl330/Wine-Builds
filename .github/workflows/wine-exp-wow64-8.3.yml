@@ -1,4 +1,4 @@
-name: Wine-32on64-WoW64 8.2 CI
+name: Wine-32on64-WoW64 8.4 CI
 
 on:
   schedule:
@@ -24,7 +24,7 @@ jobs:
           sudo apt install debootstrap perl git wget xz-utils bubblewrap autoconf
           sudo tar -C /opt -xpf /opt/Bootstraps/bootstraps.tar.xz
           chmod +x build_wine.sh
-          export WINE_VERSION="8.2"
+          export WINE_VERSION="8.4"
           export EXPERIMENTAL_WOW64="true"
           WINE_BRANCH=vanilla ./build_wine.sh
           WINE_BRANCH=staging ./build_wine.sh
