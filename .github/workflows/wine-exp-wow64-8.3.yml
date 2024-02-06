@@ -1,4 +1,4 @@
-name: Wine-32on64-WoW64 CI
+name: Wine-32on64-WoW64 8.3 CI
 
 on:
   schedule:
